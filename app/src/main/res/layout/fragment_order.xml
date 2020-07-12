@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OrderFragment">
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_unpaid"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:background="@color/colorLightGray"
+                android:text="@string/unpaid"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_wholeOrder"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorBlue"
+                android:text="@string/wholeOrder"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_order"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>
